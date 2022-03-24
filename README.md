@@ -4,13 +4,11 @@
 > user email: kaixiang.yang.work@gmail.com
 
 ### Installing Git
-
-
 > For Mac: https://git-scm.com/download/mac  
 > For Win: https://git-scm.com/download/win  
 > 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在左边栏extensions安装GitLens插件辅助显示文件目录
 <br/>
-<br/>
+
 ### 名词概念
 repository  仓库。用于存储项目文件的地方  
 branch		分支。项目除主分支外，允许多个分支同时工作，审核通过的内容才会被合并进主分支。  
@@ -20,10 +18,10 @@ push 将本地库内容推送到远端库
 request  
 merge 将分支融合到主干  
 > 从本地同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings--Developer settings--Personal access tokens--Generate new token  
-<br/>
+
 > 在远端新建repository，在绿色按钮Code的下拉选项里，复制HPPTS，将其作为$ git remote add origin https://github.com/KaixiangYang6/For-Self-Learning-Python.git 命令中
 <br/>
-<br/>
+
 ### Basic Commands For Git in Terminal.app 
 git命令参考：https://git-scm.com/docs/gittutorial
 
