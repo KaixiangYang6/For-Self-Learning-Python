@@ -47,8 +47,8 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git clone`克隆远端仓库到本地新仓库里  
 `$ git branch`列出所有存在的分支。将返回：
 ```python
-experimental  
-*master井号指当前所在分支  
+  experimental  
+* master井号指当前所在分支  
 ```
 
 `$ git branch <name>`创建分支  
