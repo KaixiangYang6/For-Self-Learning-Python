@@ -1,12 +1,14 @@
-##### Github
+# Github
 
 > user name: KaixiangYang6
 
 > user email: kaixiang.yang.work@gmail.com
 
-Installing Git
+# Installing Git
 > For Mac: https://git-scm.com/download/mac
+
 > For Win: https://git-scm.com/download/win
+
 > 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在左边栏extensions安装GitLens插件辅助显示文件目录
 
 名词概念
