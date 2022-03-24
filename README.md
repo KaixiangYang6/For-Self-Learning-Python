@@ -39,7 +39,7 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git commit`提交修改。提交后可以直接按I去修改命名，然后按Esc，再输入:wq退出修改模式  
 `$ git commit -a`自动检查任何改动的文件，添加到暂存区并提交，一键完成这几步工作。  
 `$ gut commit -m “本次上传的注释”`**一键提交并注释**  
-`$ git reset HEAD^1`重新定向到当前提交的上一个提交上
+`$ git reset HEAD^1`重新定向到当前提交的上一个提交上  
 `$ git log`**查看提交历史**  
 `$ git checkout <commit-hash>`根据hash序列号返回到对应的提交时间点。  
 `$ git push`**推送到远端仓库**  
@@ -54,7 +54,7 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git branch -m h<name>`重命名分支。**本地仓库分支命名需要与远端仓库分支保持命名一致**  
 `$ git switch <branch name>` 转到另一个分支  
 `$ git checkout <branch name>`载入另一个分支  
-`$ git checkout <file name>`载入文件初始状态
+`$ git checkout <file name>`载入文件初始状态  
 `$ git checkout -b <branch name>`以当前分支为基础新建分支  
 `$ git merge <branch name>` 将分支合并进当前master分支  
 `$ git merge —abort`放弃当前合并动作  
