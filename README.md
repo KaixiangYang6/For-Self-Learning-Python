@@ -1,6 +1,7 @@
 # Github
 
 > user name: KaixiangYang6
+
 > user email: kaixiang.yang.work@gmail.com
 
 Installing Git
