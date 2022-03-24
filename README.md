@@ -18,7 +18,8 @@ pull 将远端库内容更新到本地库
 push 将本地库内容推送到远端库  
 request  
 merge 将分支融合到主干  
-> 从本地同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings--Developer settings--Personal access tokens--Generate new token    
+> 从本地同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings--Developer settings--Personal access tokens--Generate new token  
+
 > 在远端新建repository，在绿色按钮Code的下拉选项里，复制HPPTS，将其作为$ git remote add origin https://github.com/KaixiangYang6/For-Self-Learning-Python.git 命令中
 
 ### Basic Commands in Terminal.app for Git
