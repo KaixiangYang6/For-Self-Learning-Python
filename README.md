@@ -6,7 +6,7 @@
 ### Installing Git
 > For Mac: https://git-scm.com/download/mac  
 > For Win: https://git-scm.com/download/win  
-> 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在左边栏extensions安装GitLens插件辅助显示文件目录
+> 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在VS左边栏extensions安装GitLens插件辅助显示文件目录
 <br/>
 
 ### 名词概念
@@ -46,13 +46,15 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git pull`从远端仓库拉取最新版本  
 `$ git clone`克隆远端仓库到新仓库里  
 `$ git branch`列出所有存在的分支  
+将返回：
 > experimental
-> * master井号指当前所在的分支
-$ git branch <name>			Create a Branch
-$ git branch -d <name>		Delate the branch
-$ git branch -m h<name>		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致  
-$ git switch <experimental>	Switch to the experimental branch  
-$ git checkout <branch name>	Switch To Another Branch  
+> * master井号指当前所在分支
+
+`$ git branch <name>`			Create a Branch
+`$ git branch -d <name>`		Delate the branch
+`$ git branch -m h<name>`		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致  
+`$ git switch <experimental>`	Switch to the experimental branch  
+`$ git checkout <branch name>`	Switch To Another Branch  
 $ git checkout <file name>	Switch To Original Status of the file
 $ git checkout -b <branch name>	以当前分支为基础新建分支
 $ git merge <branch name> 	将分支合并进当前master分支
