@@ -29,25 +29,20 @@ git命令参考：https://git-scm.com/docs/gittutorial
 
 `$ git —version` 				检查当前python版本  
 `$ git init` 						初始化本地git仓库。在本地文件夹执行$ git init之后，会出现git隐藏文件夹（打开系统的隐藏模式才能看到）。同时将使用master作为初始分支名称。  
-
-`$ git config —global user.name “Name”`
-
-`$ git config —global user.email “Email”`
-
-`$ git add <file name>` 添加文件到暂存区
-
-`$ git **add <folder name/>**`添加文件夹到暂存区
-
-`$ git *.html`		添加所有HTML文件到暂存区
-`$ git add .`	    添加所有文件到暂存区
-`$ git add -a`添加所有到暂存区
-`$ git rm —cached filename`从暂存区删除文件
-`$ git status`查看工作区，暂存区文件状态
-`$ git commit`提交修改。提交后可以直接按I去修改命名，然后按Esc，再输入:wq退出修改模式
-`$ git commit -a`自动检查任何改动的文件，添加到暂存区并提交，一键完成这几步工作。
-`$ gut commit -m “本次上传的注释”`提交并跳过整个编辑步骤
+`$ git config —global user.name “Name”`  
+`$ git config —global user.email “Email”`  
+`$ git add <file name>` 添加文件到暂存区  
+`$ git **add <folder name/>**`添加文件夹到暂存区  
+`$ git *.html`		添加所有HTML文件到暂存区  
+`$ git add .`	    添加所有文件到暂存区  
+`$ git add -a`添加所有到暂存区  
+`$ git rm —cached filename`从暂存区删除文件  
+`$ git status`查看工作区，暂存区文件状态  
+`$ git commit`提交修改。提交后可以直接按I去修改命名，然后按Esc，再输入:wq退出修改模式  
+`$ git commit -a`自动检查任何改动的文件，添加到暂存区并提交，一键完成这几步工作。  
+`$ gut commit -m “本次上传的注释”`提交并跳过整个编辑步骤  
 `$ git reset HEAD^1`重新定向到当前提交的上一个提交上
-`$ git log`查看提交历史
+`$ git log`查看提交历史  
 `$ git checkout <commit-hash>`根据hash序列号返回到对应的提交时间点。
 `$ git push`推送到远端仓库
 `$ git pull`从远端仓库拉取最新版本
@@ -57,10 +52,9 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `	* master`井号指当前所在的分支
 $ git branch <name>			Create a Branch
 $ git branch -d <name>		Delate the branch
-$ git branch -m h<name>		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致
-
-$ git switch <experimental>	Switch to the experimental branch
-$ git checkout <branch name>	Switch To Another Branch
+$ git branch -m h<name>		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致  
+$ git switch <experimental>	Switch to the experimental branch  
+$ git checkout <branch name>	Switch To Another Branch  
 $ git checkout <file name>	Switch To Original Status of the file
 $ git checkout -b <branch name>	以当前分支为基础新建分支
 $ git merge <branch name> 	将分支合并进当前master分支
