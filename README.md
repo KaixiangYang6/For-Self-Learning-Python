@@ -1,6 +1,6 @@
 Github
 username: KaixiangYang6
-user email: kaixiang.yang.work@gmail.com 
+user email: kaixiang.yang.work@gmail.com
 
 Installing Git
 For Mac: https://git-scm.com/download/mac
@@ -11,18 +11,19 @@ For Win: https://git-scm.com/download/win
 repository  仓库。用于存储项目文件的地方
 branch		分支。项目除主分支外，允许多个分支同时工作，审核通过的内容才会被合并进主分支。
 commit 提交
-pull request
+pull
+push
+request
 merge
 
-从本地command line 同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings-Developer settings-Personal access tokens-Generate new token
+从本地同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings--Developer settings--Personal access tokens--Generate new token
 
-新建repository，
+在远端新建repository，在绿色按钮Code的下拉选项里，复制HPPTS，将其作为$ git remote add origin https://github.com/KaixiangYang6/For-Self-Learning-Python.git 命令中
 
 Basic Commands in Terminal.app for Git
-命令参考：https://git-scm.com/docs/gittutorial
+git命令参考：https://git-scm.com/docs/gittutorial
 $ git —version 				Check Current Version
 $ git init 						Initialize Local Git Repository.在本地文件夹执行$ git init之后，会出现git隐藏文件夹（打开系统的隐藏模式才能看到）。同时将使用master作为初始分支名称。
-
 
 $ git config —global user.name “Name”
 $ git config —global user.email “Email”
