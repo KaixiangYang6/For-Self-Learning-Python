@@ -6,11 +6,11 @@
 ### Installing Git
 
 
-> For Mac: https://git-scm.com/download/mac
-> For Win: https://git-scm.com/download/win
+> For Mac: https://git-scm.com/download/mac  
+> For Win: https://git-scm.com/download/win  
 > 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在左边栏extensions安装GitLens插件辅助显示文件目录
-
-
+  
+  
 ### 名词概念
 repository  仓库。用于存储项目文件的地方  
 branch		分支。项目除主分支外，允许多个分支同时工作，审核通过的内容才会被合并进主分支。  
@@ -22,9 +22,9 @@ merge 将分支融合到主干
 > 从本地同步到云端时候，在终端输入账户名和密码时，需要的密码实际是personal access token个人身份牌。令牌在settings--Developer settings--Personal access tokens--Generate new token  
 
 > 在远端新建repository，在绿色按钮Code的下拉选项里，复制HPPTS，将其作为$ git remote add origin https://github.com/KaixiangYang6/For-Self-Learning-Python.git 命令中
-
-
-### Basic Commands in Terminal.app for Git
+  
+  
+### Basic Commands For Git in Terminal.app 
 git命令参考：https://git-scm.com/docs/gittutorial
 
 `$ git —version` 				检查当前python版本  
@@ -43,13 +43,13 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ gut commit -m “本次上传的注释”`提交并跳过整个编辑步骤  
 `$ git reset HEAD^1`重新定向到当前提交的上一个提交上
 `$ git log`查看提交历史  
-`$ git checkout <commit-hash>`根据hash序列号返回到对应的提交时间点。
-`$ git push`推送到远端仓库
-`$ git pull`从远端仓库拉取最新版本
-`$ git clone`克隆远端仓库到新仓库里
-`$ git branch`列出所有存在的分支
-`	experimental`
-`	* master`井号指当前所在的分支
+`$ git checkout <commit-hash>`根据hash序列号返回到对应的提交时间点。  
+`$ git push`推送到远端仓库  
+`$ git pull`从远端仓库拉取最新版本  
+`$ git clone`克隆远端仓库到新仓库里  
+`$ git branch`列出所有存在的分支  
+> experimental
+> * master井号指当前所在的分支
 $ git branch <name>			Create a Branch
 $ git branch -d <name>		Delate the branch
 $ git branch -m h<name>		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致  
