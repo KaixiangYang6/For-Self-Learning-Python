@@ -59,7 +59,7 @@ $ git checkout -b <branch name>	以当前分支为基础新建分支
 $ git merge <branch name> 	将分支合并进当前master分支
 $ git merge —abort			放弃当前合并动作
 $ git remote					List The Remote Repository We Have Now
-$ git remote add original https://github.com/KaixiangYang6/For-Self-Learning-Python.git 			将已创建好的远端仓库添加到本地git中文件夹，成功后输入$ git remote将返回origin（目前存在的库）
+$ git remote add original https://github.com/KaixiangYang6/For-Self-Learning-Python.git 将已创建好的远端仓库添加到本地git中文件夹，成功后输入$ git remote将返回origin（目前存在的库）
 $ git push -u origin master	将当前origin master分支推到云端
 
 
