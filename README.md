@@ -44,7 +44,7 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git checkout <commit-hash>`根据hash序列号返回到对应的提交时间点。  
 `$ git push`**推送到远端仓库。本地没有远端新时，先pull再push**  
 `$ git pull`**从远端仓库拉取最新版本**  
-`$ git clone`克隆远端仓库到新仓库里  
+`$ git clone`克隆远端仓库到本地新仓库里  
 `$ git branch`列出所有存在的分支。将返回：
 > experimental  
 > *master井号指当前所在分支
