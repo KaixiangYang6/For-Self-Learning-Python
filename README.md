@@ -48,26 +48,26 @@ git命令参考：https://git-scm.com/docs/gittutorial
 `$ git branch`列出所有存在的分支  
 将返回：
 > experimental
-> * master井号指当前所在分支
+> ‘*’master井号指当前所在分支
 
-`$ git branch <name>`			Create a Branch
-`$ git branch -d <name>`		Delate the branch
-`$ git branch -m h<name>`		Rename the branch. 本地仓库分支命名需要与远端仓库分支保持命名一致  
-`$ git switch <experimental>`	Switch to the experimental branch  
-`$ git checkout <branch name>`	Switch To Another Branch  
-$ git checkout <file name>	Switch To Original Status of the file
-$ git checkout -b <branch name>	以当前分支为基础新建分支
-$ git merge <branch name> 	将分支合并进当前master分支
-$ git merge —abort			放弃当前合并动作
-$ git remote					List The Remote Repository We Have Now
-$ git remote add original https://github.com/KaixiangYang6/For-Self-Learning-Python.git 将已创建好的远端仓库添加到本地git中文件夹，成功后输入$ git remote将返回origin（目前存在的库）
-$ git push -u origin master	将当前origin master分支推到云端
+`$ git branch <name>`创建分支  
+`$ git branch -d <name>`删除分支  
+`$ git branch -m h<name>`重命名分支 **本地仓库分支命名需要与远端仓库分支保持命名一致**  
+`$ git switch <branch name>` 转到另一个分支  
+`$ git checkout <branch name>`载入另一个分支  
+`$ git checkout <file name>`载入文件初始状态
+`$ git checkout -b <branch name>`以当前分支为基础新建分支  
+`$ git merge <branch name>` 将分支合并进当前master分支  
+`$ git merge —abort`放弃当前合并动作  
+`$ git remote`列出已有的远端分支  
+`$ git remote add original https://github.com/KaixiangYang6/For-Self-Learning-Python.git` 将已创建好的远端仓库添加到本地git中文件夹，成功后输入$ git remote将返回origin（目前存在的库）  
+`$ git push -u origin master`将当前origin master分支推到云端  
 
 
 
-$ touch XXX.js	create a JS file
-$touch .gitignore				创建一个文件名清单，其包含的文件将不会被git同步
-	/文件夹名称	
-$ clear			清空窗口
+`$ touch <name.js>`在本地创建一个js文件  
+`$touch .gitignore`创建一个文件名清单，其包含的文件将不会被git同步  
+`$ touch </name>`在本地创建一个文件夹  
+`$ clear`清空窗口内容  
 
 
