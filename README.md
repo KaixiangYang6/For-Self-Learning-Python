@@ -23,7 +23,7 @@ merge 将分支融合到主干
 <br/>
 
 ### Basic Commands For Git in Terminal.app 
-git命令参考：https://git-scm.com/docs/gittutorial
+git指令参考：https://git-scm.com/docs/gittutorial
 
 `$ git —version` 				检查当前python版本  
 `$ git init` 						初始化本地git仓库。在本地文件夹执行$ git init之后，会出现git隐藏文件夹（打开系统的隐藏模式才能看到）。同时将使用master作为初始分支名称。  
