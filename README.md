@@ -1,11 +1,10 @@
 # Github
-=============
 
 > user name: KaixiangYang6
 
 > user email: kaixiang.yang.work@gmail.com
 
-# Installing Git
+### Installing Git
 
 
 > For Mac: https://git-scm.com/download/mac
@@ -14,7 +13,7 @@
 
 > 从https://code.visualstudio.com/ 下载Visual Studio Code，并安装。在左边栏extensions安装GitLens插件辅助显示文件目录
 
-# 名词概念
+### 名词概念
 repository  仓库。用于存储项目文件的地方
 
 branch		分支。项目除主分支外，允许多个分支同时工作，审核通过的内容才会被合并进主分支。
