@@ -27,8 +27,8 @@ git命令参考：https://git-scm.com/docs/gittutorial
 
 `$ git —version` 				检查当前python版本  
 `$ git init` 						初始化本地git仓库。在本地文件夹执行$ git init之后，会出现git隐藏文件夹（打开系统的隐藏模式才能看到）。同时将使用master作为初始分支名称。  
-`$ git config —global user.name “Name”`  
-`$ git config —global user.email “Email”`  
+`$ git config —global user.name “Name”`登记账号  
+`$ git config —global user.email “Email”`登记email。在log里可以看到是谁提交的  
 `$ git add <file name>` 添加文件到暂存区  
 `$ git add <folder name/>`添加文件夹到暂存区  
 `$ git *.html`添加所有HTML文件到暂存区  
