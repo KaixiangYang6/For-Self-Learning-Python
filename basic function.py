@@ -18,3 +18,5 @@ message = greeting + ', ' + name + '. Welcome '    #使用‘+’将文本连接
 message = '{}, {}. Welcome!'.format(greeting, name) #使用placeholder大括号占据空位，用format函数填充空位
 message = f'{greeting}, {name.upper()}. Welcome!'   #新的长字符串表达方式，用f，并将内容填写在大括号内，不再用format函数。并且可在大括号内继续使用其他函数
 print(message)
+
+print(help(str.lower))  #学会使用print(help())查阅函数的功能和参数
