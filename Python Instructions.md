@@ -74,7 +74,7 @@ message = message.replace('World', 'Universe')  #需要重新设置变量，原�
 print(message)
 ```
 
-使用`'+'`将文本连接，但不适合处理复杂文本
+使用`'+'`将文本连接，但不适合处理长字符串
 
 ```python
 greeting = 'Hello'
@@ -82,7 +82,7 @@ name = 'Michael'
 message = greeting + ', ' + name + '. Welcome '    #使用'+'将文本连接，但不适合长字符串。
 ```
 
-大括号表示占位，后面的变量将按照顺序补充到位置上。`f'{变量} {变量.method}!'`是比较推荐的长字符方法。
+大括号用来占位，后面的变量将按照顺序补充到位置上。`f'{变量} {变量.method}!'`是比较推荐的长字符方法。
 ```python
 message = '{}, {}. Welcome!'.format(greeting, name) #使用大括号占位，用format填充空位
 message = f'{greeting}, {name.upper()}. Welcome!'
