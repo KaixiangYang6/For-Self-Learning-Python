@@ -24,7 +24,7 @@
 
 text data in python is called a string 字符串
   
-## Python 语法
+## Python Syntax
 
 注释comments
 `#……` #The comments start with a hash character/the pound sign
@@ -57,7 +57,7 @@ print(message[0:5]) #打印第一至第六个范围内的字母
 print(message[6:])  #打印第七至最后一个字母
 ```
 
-对strings的命令
+对strings的method命令
 
 ```python
 print(message.lower())  #变成小写字母
@@ -83,13 +83,67 @@ message = greeting + ', ' + name + '. Welcome '    #使用'+'将文本连接，�
 ```
 
 大括号用来占位，后面的变量将按照顺序补充到位置上。`f'{变量} {变量.method}!'`是比较推荐的长字符方法。
+
 ```python
 message = '{}, {}. Welcome!'.format(greeting, name) #使用大括号占位，用format填充空位
 message = f'{greeting}, {name.upper()}. Welcome!'
 print(message)
 ```
+
+
+使用dir和help查找使用方法。
 ```python
+name = 'Michael'
 print(dir(name)) #show all of the attributes and methods that we have access to that variable.
 print(help(str)) #show info of methods of 'str' class
 print(help(str.lower)) #show info of lower method
+```
+
+`type()` 将会返回变量的数据类型
+
+```python
+num = 3
+print(type(num))
+```
+
+
+```python
+# Arithmetic Operators:
+# Addition:       3 + 2
+# Subtraction:    3 - 2
+# Multiplication: 3 * 2
+# Division:       3 / 2
+# Floor Division: 3 // 2    不想要十分位decimal，只要整数
+# Exponent:       3 ** 2    幂
+# Modulus:        3 % 2     取余数
+# n +=1;  n *= 2
+
+print(3 * (2 + 1))  #括号的作用和数学中一样
+print(abs(-3))      #绝对值
+print(round(3.75, 1))  #对数字进行四舍五入，按照指定的位数。Round a number to a given precision in decimal digits
+
+
+# Comparisons:
+# Equal:            3 == 2
+# Not Equal:        3 != 2
+# Greater Than:     3 > 2
+# Less Than:        3 < 2
+# Greater or Equal: 3 >= 2
+# Less or Equal:    3 <= 2
+
+print(3 != 2) # return True
+print(3 <= 2) # return False
+
+```
+
+**将字符整数化**
+
+```python
+num_1 = '100'
+num_2 = '200'
+
+num_1 = int(num_1)
+num_2 = int(num_2)
+
+print(num_1 + num_2)
 ```
