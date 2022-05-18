@@ -148,4 +148,29 @@ num_2 = int(num_2)
 print(num_1 + num_2)
 ```
 
+## 数组
 
+
+
+```python
+courses = ['History', 'Math', 'Physics', 'CompSci']
+courses_2 = ['Art', 'Education']
+
+print(courses)      #返回['History', 'Math', 'Physics', 'CompSci']
+print(len(courses)) #返回4
+print(courses[0])   #返回History 正数第一个
+print(courses[-1])  #返回CompSci 倒数第一个
+print(courses[0:2]) #返回['History', 'Math'] return objects from 1st to 3rd(not include 3rd)
+print(courses[:2]) #返回['History', 'Math'] return objects from 1st to 3rd(not include 3rd)
+print(courses[2:]) #返回['Physics', 'CompSci'] return objects from 3rd to the last one
+
+courses.append('Art')#向末尾添加'Art'
+
+courses.insert(0, 'Art')#向0号位置插入'Art'
+courses.insert(0, courses_2)#向0号位置插入'Art'，将返回[['Art', 'Education'], 'Math', 'Physics', 'CompSci']。整个数组都被填在0号位置
+courses.extend(course_2) #向末尾添加数组内对象， 将返回['History', 'Math', 'Physics', 'CompSci', 'Art', 'Education']
+courses.remove('Math') #从数组里去除Math
+courses.pop #将返回去除的对象
+
+
+```
