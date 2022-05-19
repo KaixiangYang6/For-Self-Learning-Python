@@ -155,6 +155,7 @@ print(num_1 + num_2)
 ```python
 courses = ['History', 'Math', 'Physics', 'CompSci']
 courses_2 = ['Art', 'Education']
+nums = [1, 5, 2, 4, 3]
 
 print(courses)      #返回['History', 'Math', 'Physics', 'CompSci']
 print(len(courses)) #返回4
@@ -165,12 +166,47 @@ print(courses[:2]) #返回['History', 'Math'] return objects from 1st to 3rd(not
 print(courses[2:]) #返回['Physics', 'CompSci'] return objects from 3rd to the last one
 
 courses.append('Art')#向末尾添加'Art'
-
 courses.insert(0, 'Art')#向0号位置插入'Art'
 courses.insert(0, courses_2)#向0号位置插入'Art'，将返回[['Art', 'Education'], 'Math', 'Physics', 'CompSci']。整个数组都被填在0号位置
 courses.extend(course_2) #向末尾添加数组内对象， 将返回['History', 'Math', 'Physics', 'CompSci', 'Art', 'Education']
 courses.remove('Math') #从数组里去除Math
-courses.pop #将返回去除的对象
+popped = courses.pop #新建一个变量抓取将要返回的，去除的对象（从末尾开始去除）
+courses.reverse()   #返回颠倒顺序的数组
+courses.sort()  #返回按照字母顺序alphabetical排列
+nums.sort() #返回按照升序ascending排列
+courses.sort(reverse=True)  #返回颠倒字母顺序排列
+nums.sort(reverse=True) #返回降序排列
+
+#在不使用数组method不改变原数组的情况下，使用function将改变后的结果存到新变量里。
+sorted_courses = sorted(courses)
+print(sorted_courses)
+
+print(max(nums))    #返回最大值
+print(min(nums))    #返回最小值
+print(sum(nums))    #返回总和
+print(courses.index('CompSci')) #将返回这个单词在第几位
+print('Art' in courses) #检查数组内有没有单词
+
+#获得数组内的每个对象
+for item in courses: #item不是built-in变量，任何变量都可以放在这。
+    print(item)
+
+for index, course in enumerate(courses, start=1): #start=1规定输出从1开始计数
+    print(index, course) #将返回 序号和对象
+#返回
+#1 History
+#2 Math
+#3 Physics
+#4 CompSci
+
+
+course_str = ', '.join(courses) #join是string的method，意思是使用''内的内容来分隔join括号内的变量。将直接得到对象，而非字符串
+#返回 
+#History, Math, Physics, CompSci
+
+new_list = course_str.split(', ') #将刚刚转换为单词的变量course_str转换为被', '分隔的字符串。
+#返回 
+#['History', 'Math', 'Physics', 'CompSci']
 
 
 ```
