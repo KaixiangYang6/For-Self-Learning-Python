@@ -11,7 +11,7 @@
 
 ## Terminal命令
 
-检查python版本：`$ python3 —version`
+检查python版本：`$ python3 —-version` `$ python —-version` 都可以
 进入文件夹：`$ cd 文件夹地址（简介里复制）`
 打开/执行文件：`$ python3 文件名.py`
 
@@ -199,14 +199,146 @@ for index, course in enumerate(courses, start=1): #start=1规定输出从1开始
 #3 Physics
 #4 CompSci
 
-
+#courses的内容看开头
 course_str = ', '.join(courses) #join是string的method，意思是使用''内的内容来分隔join括号内的变量。将直接得到对象，而非字符串
 #返回 
 #History, Math, Physics, CompSci
 
 new_list = course_str.split(', ') #将刚刚转换为单词的变量course_str转换为被', '分隔的字符串。
+
+print(course_str)
+#返回
+#History - Math - Physics - CompSci
+
+print(new_list)
 #返回 
 #['History', 'Math', 'Physics', 'CompSci']
+
+
+```
+
+We can not modify tuples. In programming this is called mutable and immutable.
+**Lists are mutable and tuples are immutable.**
+
+```python
+#mutable
+list_1 = ['History', 'Math', 'Physics', 'CompSci']
+list_2 = list_1
+print(list_1)
+print(list_2)
+
+list_1[0] = 'Art'
+print(list_1)
+print(list_2)
+#return
+#['History', 'Math', 'Physics', 'CompSci']
+#['History', 'Math', 'Physics', 'CompSci']
+
+
+#immutable
+tuple_1 = ('History', 'Math', 'Physics', 'CompSci')
+tuple_2 = tuple_1
+
+print(tuple_1)
+print(tuple_2)
+
+tuple_1[0] = 'Art'  #
+
+print(tuple_1)
+print(tuple_2) 
+#return
+#('History', 'Math', 'Physics', 'CompSci')
+
+
+cs_courses = {'History', 'Math', 'Physics', 'CompSci'}
+art_courses = {'History', 'Math', 'Art', 'Design'}
+
+print('Math' in cs_courses)
+#return True
+
+print(cs_courses.intersection(art_courses))
+#return{'History', 'Math'}
+print(cs_courses.difference(art_courses))
+#return{'Physics', 'CompSci'}
+print(cs_courses.union(art_courses))
+#return{'Art', 'CompSci', 'Math', 'Design', 'History', 'Physics'}
+
+
+# Empty Lists
+empty_list = []     #使用中括号创建
+empty_list = list() #直接创建
+
+# Empty Tuples
+empty_tuple = ()
+empty_tuple = tuple()
+
+# Empty Sets
+empty_set = {} # This isn't right! It's a dictionary
+empty_set = set(), set('foobar'), set(['a', 'b', 'foo'])    #不同的方法
+
+```
+
+## key value pair 键值对
+
+```python
+student = {'name': 'John', 'age': 25, 'courses': ['Math', 'CompSci']}
+
+print(student.get('phone')) #get an inexistent key
+#return None
+
+print(student.get('phone'), 'Not Found') #pass the value we want as the second value
+#return Not Found
+
+student.update({'name': 'Jane', 'age': 26, 'phone': '555-5555'})
+print(studnet)
+#return {'name': 'Jane', 'age': 26, 'courses': ['Math', 'CompSci'], 'phone': '555-5555'}
+
+del student['age']  #delete
+
+age = student.pop('pop') #remove age from student
+print(age)
+#return 25
+
+print(len(student)) #number of keys. length of student set
+#return 3
+
+print(student.keys())
+#return dict_keys(['name', 'age', 'courses'])
+
+print(student.values())
+#return dict_values(['John', 25, ['Match', 'CompSci']])
+
+print(student.items())  #loop through pairs of keys and values
+#return dict_items([('name', 'John'), ('age', 25), ('courses', ['Math', 'CompSci'])])
+
+
+for key, value in student.items() #loop through keys and values
+    print(key, value)
+
+```
+
+## IF 条件句
+
+```python
+# Comparisons:
+# Equal:            ==
+# Not Equal:        !=
+# Greater Than:     >
+# Less Than:        <
+# Greater or Equal: >=
+# Less or Equal:    <=
+# Object Identity:  is
+
+if language == 'Python':
+    print('Language is Python')
+elif language == 'Java': 
+    print('Language is Java')
+elif language == 'JavaScript': 
+    print('Language is JavaScript')
+else:
+    print('No match')
+
+
 
 
 ```
