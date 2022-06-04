@@ -339,6 +339,84 @@ else:
     print('No match')
 
 
+user = 'Admin'
+logged_in = False
+
+if user == 'Admin' or logged_in #'and': both needs to be true. 'or': either is true.
+    print('Admin Page')
+else:
+    print('Bad Creds')
+
+
+if not logged_in:
+    print('Please Log In')
+else:
+    print('Welcome')
 
 
 ```
+ 
+```python
+a = [1, 2, 3]
+b = [1, 2 ,3]
+
+print(a == b)
+#return True，数组内容相同
+print(a is b)
+#return False. 两个对象都有内建的ID函数，
+print(id(a))
+print(id(b))
+#return two strings of numbers
+
+#如果
+a = [1, 2, 3]
+b = a
+print(a is b)
+#return Ture. b继承了a的内建的ID函数，
+rint(id(a))
+print(id(b))
+#返回的两串ID数字串将会是相等的
+
+#在if条件句的判断evaluate中，
+# False Values: 被判断为False的condition
+    # False
+    # None
+    # Zero of any numeric type
+    # Any empty sequence. For example, '', (), [].
+    # Any empty mapping. For example, {}.
+
+```
+
+## Loop
+
+```python
+for num in nums:
+    if num == 3:
+        print('Found!')
+        continue #break will stop loop
+    print(num)
+
+for i in range(1, 11):
+    print(i)
+#return 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 不包括最后一个数字
+
+x = 0
+while x < 10:
+    if x == 5:
+        break
+    print(x)
+    x += 1
+#return 0, 1, 2, 3, 4,
+
+x = 0
+while True:
+    if x == 5:
+        break
+    print(x)
+    x += 1
+#return 0, 1, 2, 3, 4,
+
+#如果遇到无法停止的循环，在其循环过程中按下control+C
+```
+
+## Function
