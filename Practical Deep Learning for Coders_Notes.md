@@ -14,9 +14,9 @@ The training of programs developed by allowing a computer to learn from its expe
 ## Neural Networks
 
 It is not at all obvious what the method might look like for an image recognition program, or for understanding text, or for many other interesting problems we might imagine.
-What we would like is some kind of function that is so flexible that it could be used to solve any given problem, just by varying its weights. Amazingly enough, this function actually exists!** It is the neural network.神经网络是一种解决问题的通用函数，只需要通过变化权重。**
+What we would like is some kind of function that is so flexible that it could be used to solve any given problem, just by varying its weights. Amazingly enough, this function actually exists! **It is the neural network.神经网络是一种解决问题的通用函数，只需要通过变化权重。**
 A mathematical proof called the **universal approximation theorem** shows that this function can solve any problem to any level of accuracy, in theory.
 ![](Practical%20Deep%20Learning%20for%20Coders_IMG/image2.png)
 
-在训练过程中，根据表现不断调整，找到好的权重分配是工作目的。这也被叫做Stochastic Gradient Descent（SGD）
+在训练过程中，根据表现不断调整，找到好的权重分配是工作目的。这也被叫做Stochastic Gradient Descent（SGD）。
 ![](Practical%20Deep%20Learning%20for%20Coders_IMG/image3.png)
