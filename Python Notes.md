@@ -82,10 +82,11 @@ name = 'Michael'
 message = greeting + ', ' + name + '. Welcome '    #使用'+'将文本连接，但不适合长字符串。
 ```
 
-大括号用来占位，后面的变量将按照顺序补充到位置上。`f'{变量} {变量.method}!'`是比较推荐的长字符方法。
+**大括号用来占位，后面的变量将按照顺序补充到位置上。`f'{变量} {变量.method}!'`是比较推荐的长字符方法。**
 
 ```python
 message = '{}, {}. Welcome!'.format(greeting, name) #使用大括号占位，用format填充空位
+
 message = f'{greeting}, {name.upper()}. Welcome!'
 print(message)
 ```
@@ -420,3 +421,19 @@ while True:
 ```
 
 ## Function
+
+```python
+def hello_func():
+    # pass #avoid causing errors for leaving it blank
+    return 'Hello Function' 
+    
+print(hello_func().upper()) #用对待返回值的方式对待函数
+
+def student_info(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+student_info('Math', 'Art', name='John', age=22)
+
+
+```
