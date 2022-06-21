@@ -68,7 +68,7 @@ git指令参考：https://git-scm.com/docs/gittutorial
 #### `$touch .gitignore`**创建一个文件名清单，其包含的文件将不会被git同步**  
 
 #### How do I switch branches from master to main?
-`$ git checkout -b main` create a new branch locally
+`$ git checkout -b main` create a new branch locally  
 `$ git branch -D master` delete the old default branch locally:
 
 `$ touch <name.js>`在本地创建一个js文件  
