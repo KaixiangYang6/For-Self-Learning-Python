@@ -65,9 +65,9 @@ git指令参考：https://git-scm.com/docs/gittutorial
 `$ git remote`列出已有的远端分支  
 `$ git remote add original https://github.com/KaixiangYang6/For-Self-Learning-Python.git` **将已创建好的远端仓库添加到本地git中文件夹，成功后输入$ git remote将返回origin（目前存在的库）**  
 `$ git push -u origin master`将当前origin master分支推到云端  
-#### `$touch .gitignore`**创建一个文件名清单，其包含的文件将不会被git同步**  
+#### `$ touch .gitignore` 创建一个文件名清单，其包含的文件将不会被git同步  
 
-#### How do I switch branches from master to main?
+### How do I switch branches from master to main?
 `$ git checkout -b main` create a new branch locally  
 `$ git branch -D master` delete the old default branch locally:
 
